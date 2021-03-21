@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+import { withAuthenticator } from '@aws-amplify/ui-react';
 import Footer from './component/Footer';
 import Guarantee from './component/Guarantee';
 import Header from './component/Header';
