@@ -30,3 +30,36 @@ export const listProducts = /* GraphQL */ `
     }
   }
 `;
+export const getPerson = /* GraphQL */ `
+  query GetPerson($id: ID!) {
+    getPerson(id: $id) {
+      id
+      dynamicSlug
+      fullName
+      title
+      description
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const listPersons = /* GraphQL */ `
+  query ListPersons(
+    $filter: ModelPersonFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listPersons(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        dynamicSlug
+        fullName
+        title
+        description
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;

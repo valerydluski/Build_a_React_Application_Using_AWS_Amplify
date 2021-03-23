@@ -34,3 +34,42 @@ export const onDeleteProduct = /* GraphQL */ `
     }
   }
 `;
+export const onCreatePerson = /* GraphQL */ `
+  subscription OnCreatePerson {
+    onCreatePerson {
+      id
+      dynamicSlug
+      fullName
+      title
+      description
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdatePerson = /* GraphQL */ `
+  subscription OnUpdatePerson {
+    onUpdatePerson {
+      id
+      dynamicSlug
+      fullName
+      title
+      description
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeletePerson = /* GraphQL */ `
+  subscription OnDeletePerson {
+    onDeletePerson {
+      id
+      dynamicSlug
+      fullName
+      title
+      description
+      createdAt
+      updatedAt
+    }
+  }
+`;
