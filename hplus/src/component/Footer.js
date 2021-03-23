@@ -1,4 +1,5 @@
 import React from 'react';
+import { AmplifySignOut } from '@aws-amplify/ui-react';
 
 const Footer = () => {
   return (
@@ -23,6 +24,7 @@ const Footer = () => {
           </div>
         </nav>
         <p className="legal">H+ Sport is a fictitious brand created by lynda.com solely for the purpose of training. All products and people associated with H+ Sport are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+        <p><AmplifySignOut /></p>
       </div>
     </footer>
   );

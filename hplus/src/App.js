@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { withAuthenticator } from '@aws-amplify/ui-react';
 import Footer from './component/Footer';
 import Guarantee from './component/Guarantee';
 import Header from './component/Header';
@@ -23,4 +24,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default withAuthenticator(App);
