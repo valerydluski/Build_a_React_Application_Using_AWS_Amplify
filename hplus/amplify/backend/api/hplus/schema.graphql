@@ -1,5 +1,5 @@
-type Todo @model {
+type Product @model {
   id: ID!
-  name: String!
-  description: String
+  dynamicSlug: String!
+  productName: String!
 }
