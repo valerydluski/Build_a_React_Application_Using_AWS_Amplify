@@ -1,6 +1,18 @@
 import React from 'react';
 import ProductItem from './ProductItem';
-import productData from './data/products.json'
+// import productData from './data/products.json'
+
+const listProducts = `
+  query ListProducts {
+    listProducts {
+      items {
+        id
+        productName
+        dynamicSlug
+      }
+    }
+  }
+`
 
 const Products = () => {
   return (
